@@ -1,0 +1,153 @@
+// component
+.goto-homepage{
+    position: fixed;
+    left: 5px;
+    top: 45%;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translateY(-50%) rotate(-90deg);
+    color: rgba($color: #FFF, $alpha: 0.6);
+    @include media-breakpoint-down(lg){
+        top: 35%;
+    }
+    @include media-breakpoint-down(md){
+        top: 35%;
+        left: 0;
+    }
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+    &:hover, &:focus{
+        color: #FFF;
+        text-decoration: none;
+    }
+}
+
+.overlay-loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    .modal-body{
+        h5{
+            font-size: 18px;
+            font-family: $bla;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        h6{
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: rgba($color: #2B3843, $alpha: 0.6);
+        }
+        
+    }
+    &.modal-pop{
+        .modal-dialog{
+            max-width: 570px;
+            .modal-content{
+                border-radius: 10px;
+                border: none;
+                .modal-body{
+                    position: relative;
+                    background-size: auto;
+                    background-position: bottom right;
+                    background-repeat: no-repeat;
+                    padding: 60px 35px;
+                    border-radius: 10px;
+                    border: 1px solid #DEDEDE;
+                    @include media-breakpoint-down(sm){
+                        text-align: center;
+                        padding: 40px 20px;
+                        background-image: none !important;
+                    }
+                    h5{
+                        font-family: $r;
+                        @include media-breakpoint-down(sm){
+                            font-size: 16px;
+                        }
+                    }
+                    h4{
+                        font-size: 26px;
+                        font-family: $bla;  
+                        @include media-breakpoint-down(sm){
+                            font-size: 22px;
+                        }
+                    }
+                    .jersey{
+                        position: absolute;
+                        right: 0;
+                        top: -5px;
+                        width: 280px;
+                        @include media-breakpoint-down(sm){
+                            display: none;
+                        }
+                    }
+                    .btn{
+                        font-family: $bla;
+                        padding: 15px 30px;
+                    }
+                    .close{
+                        width: 20px;
+                        height: 20px;
+                        background-color: #000000;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        color: #FFF;
+                        opacity: 1;
+                        top: -10px;
+                        right: -10px;
+                        z-index: 99;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-backdrop{
+    background-color: rgba($color: #2B3843, $alpha: 0.8);
+    &.show{
+        opacity: 1;
+    }
+}
+
+.ads{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 1366px){
+        width: 120px;
+    }
+    @include media-breakpoint-down(md){
+        display: none;
+    }
+    img{
+        max-width: 100%;
+        display: inline-block;
+    }
+    &.left{
+        left: 0px;
+        text-align: left;
+    }
+    &.right{
+        right: 0px;
+        text-align: right;
+    }
+}

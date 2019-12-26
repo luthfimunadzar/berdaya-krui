@@ -1,0 +1,10 @@
+assets/css/*.css.map
+.idea/
+.sass-cache
+
+package.json
+package-lock.json
+bower.json
+gulpfile.js
+node_modules
+bower_components

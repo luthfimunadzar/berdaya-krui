@@ -1,0 +1,119 @@
+.hero.mini.score{
+    padding-top: 0px;
+    height: 190px;
+    h4{
+        font-size: 48px;
+        margin-bottom: 0px;
+    }
+    h6{
+        font-size: 24px;
+        color: #FFF;
+        margin: 0;
+        font-family: $bla;
+    }
+    img{
+        width: 237px;
+    }
+}
+
+.filter{
+    padding: 35px 0;
+    background-color: #F8F6F6;
+    @include media-breakpoint-down(sm) {
+        padding: 20px 0;
+    }
+    .form-group{
+        margin-bottom: 0;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 15px;
+        }
+    }
+    a{
+        font-size: 12px;
+        color: $main;
+        font-family: $b;
+        display: inline-block;
+        margin-top: 45px;
+        @include media-breakpoint-down(sm) {
+            margin-top: 0px;
+        }
+    }
+}
+
+.score-table{
+    padding: 40px 0 80px 0;
+    @include media-breakpoint-down(sm) {
+        padding: 20px 0 40px 0;
+    }
+    h6{
+        font-size: 12px;
+        margin-bottom: 20px;
+        color: #2B3843;
+    }
+
+    .table-overflow{
+        overflow-x: auto;
+        width: 100%;
+        .table{
+            margin: 0;
+            thead{
+                border-radius: 4px;
+                tr{
+                    th{
+                        font-size: 12px;
+                        color: $main;
+                        padding: 10px 20px;
+                        background-color: #FFEAEA;
+                        border: none;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        font-size: 14px;
+                        color: #2B3843;
+                        padding: 20px;
+                        border-bottom: 1px solid rgba($color: #737474, $alpha: 0.2);
+                        vertical-align: middle;
+                        &.font-weight-black{
+                            font-family: $bla;
+                        }
+                    }
+                    &:nth-child(even){
+                        td{
+                            background-color: rgba($color: #F8F6F6, $alpha: 0.41);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.big{
+        padding: 25px 0;
+        .table{
+            thead{
+                tr{
+                    th{
+                        background-color: #DD3333;
+                        color: #FFF;
+                        font-size: 18px;
+                        font-family: $bla;
+                        padding: 30px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        border: none;
+                        font-size: 22px;
+                        padding: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

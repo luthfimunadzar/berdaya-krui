@@ -1,0 +1,115 @@
+// header
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    .navbar{
+        transition: all 0.3s ease;
+        .navbar-brand{
+            position: relative;
+            img.logo{
+                transition: all 0.3s ease;
+                width: 70px;
+                @include media-breakpoint-down(sm){
+                    width: 70px;
+                }
+            }
+        }
+        .navbar-toggler{
+            border: 1px solid $wt;
+            margin-left: auto;
+            padding: 3px 7px;
+            &:hover, &:focus{
+                color: #B39977;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                @include media-breakpoint-down(sm){
+                    background-color: $second;
+                }
+                .nav-item{
+                    .nav-link{
+                        font-size: 16px;
+                        padding: 10px 20px;
+                        color: $wt;
+                        font-family: $r;
+                        transition: all 0.3s ease;
+                        text-transform: uppercase;
+                        &:hover, &:focus{
+                            color: $main;
+                        }
+                        @include media-breakpoint-down(sm){
+                            padding: 5px 10px;
+                            text-align: center;
+                        }
+                        img{
+                            transform: rotate(90deg);
+                            width: 12px;
+                            margin-right: 5px;
+                        }
+                    }
+                    &.btn-daftar{
+                        position: relative;
+                        @include media-breakpoint-down(sm){
+                            text-align: center;
+                        }
+                        &:before{
+                            content: "";
+                            width: 1px;
+                            height: 30px;
+                            position: absolute;
+                            left: 0;
+                            top: 16px;
+                            background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+                            @include media-breakpoint-down(sm){
+                                display: none;
+                            }
+                        }
+                        .btn-secondary{
+                            background-color: $wt;
+                            margin: 14px 0 0 18px;
+                            border: none;
+                            text-transform: uppercase;
+                            font-family: $bla;
+                            color: #1E2857;
+                            font-size: 12px;
+                            padding: 8px 13px;
+                            transition: all 0.3s ease;
+                            @include media-breakpoint-down(sm){
+                                margin: 5px 0 10px 10px;
+                                width: 220px;
+                            }
+                            &:hover, &:focus{
+                                color: $main;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.scrolled{
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: $second;
+            .navbar-brand{
+                img.logo{
+                    width: 50px;
+                }
+            }
+            .navbar-collapse{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            color: $wt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+// typhography
+
+@font-face {
+    font-family: 'DIN Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DIN Pro'), url('../fonts/DINPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DIN Pro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DIN Pro Medium'), url('../fonts/DINPro-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DIN Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DIN Pro Bold'), url('../fonts/DINPro-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DIN Pro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DIN Pro Black'), url('../fonts/DINPro-Black.woff') format('woff');
+}
+
+body {
+    font-family: 'DIN Pro', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2B3843;
+}
+
