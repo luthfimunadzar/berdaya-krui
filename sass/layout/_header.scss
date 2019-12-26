@@ -13,7 +13,7 @@ header{
                 transition: all 0.3s ease;
                 width: 70px;
                 @include media-breakpoint-down(sm){
-                    width: 70px;
+                    width: 50px;
                 }
             }
         }
