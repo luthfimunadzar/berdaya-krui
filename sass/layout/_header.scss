@@ -5,6 +5,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 10;
+    transition: all 0.3s ease;
     .navbar{
         transition: all 0.3s ease;
         .navbar-brand{
@@ -111,5 +112,8 @@ header{
                 }
             }
         }
+    }
+    &.nav-up{
+        top: -83px;
     }
 }

@@ -129,20 +129,8 @@
     @include media-breakpoint-down(sm){
         padding: 40px 0;
     }
-    .border-right{
-        border-right: 1.5px solid $second !important;
-        @include media-breakpoint-down(sm){
-            border: none !important;
-        }
-    }
-    .border-left{
-        border-left: 1.5px solid $second !important;
-        @include media-breakpoint-down(sm){
-            border: none !important;
-        }
-    }
     h4{
-        font-size: 30px;
+        font-size: 26px;
         font-family: $b;
         color: $main;
         @include media-breakpoint-down(md){
@@ -154,16 +142,13 @@
     }
     .pur-item{
         position: relative;
-        padding-left: 90px;
-        padding-right: 0px;
-        margin-top: 40px;
+        margin-top: 20px;
         @include media-breakpoint-down(sm){
             text-align: center;
             margin-top: 20px;
-            padding-left: 0px;
         }
         h5{
-            font-size: 24px;
+            font-size: 20px;
             font-family: $m;
             color: $main;
             @include media-breakpoint-down(md){
@@ -171,7 +156,7 @@
             }
         }
         h6{
-            font-size: 18px;
+            font-size: 16px;
             color: $main;
             @include media-breakpoint-down(md){
                 font-size: 16px;
@@ -195,12 +180,9 @@
             }
         }
         &.right{
-            padding-right: 90px;
-            padding-left: 0px;
             text-align: right;
             @include media-breakpoint-down(sm){
                 text-align: center;
-                padding-right: 0px;
             }
             .icon{
                 left: auto;
@@ -211,6 +193,10 @@
                 }
             }
         }
+    }
+    .border-yellow{
+        border-top: 1px solid $second;
+        margin: 32px 0 24px 0; 
     }
 }
 
@@ -223,7 +209,7 @@
     .title{
         text-align: center;
         font-family: $b;
-        font-size: 30px;
+        font-size: 32px;
         color: $main;
         @include media-breakpoint-down(md){
             font-size: 26px;
@@ -255,7 +241,7 @@
             }
         }
         h5{
-            font-size: 24px;
+            font-size: 20px;
             font-family: $m;
             text-transform: uppercase;
             color: $main;
@@ -278,7 +264,7 @@
             width: 100%;
             background-size: cover;
             background-position: center center;
-            height: 450px;
+            height: 100vh;
             @include media-breakpoint-down(sm){
                 height: 250px;
             }
@@ -382,7 +368,7 @@
     .title{
         text-align: center;
         font-family: $b;
-        font-size: 30px;
+        font-size: 32px;
         color: $main;
         @include media-breakpoint-down(md){
             font-size: 26px;
