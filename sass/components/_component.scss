@@ -129,3 +129,36 @@
     }
 }
 
+.hero-inner{
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    @include media-breakpoint-down(md){
+        height: 300px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+    h2{
+        padding-bottom: 50px;
+        font-family: $m;
+        color: $wt;
+        font-size: 36px;
+        position: relative;
+        z-index: 2;
+        @include media-breakpoint-down(sm){
+            font-size: 30px;
+        }
+    }
+}
