@@ -1,42 +1,40 @@
 // footer
 footer{
-    background-color: $main;
-    padding: 15px 0;
-    @include media-breakpoint-down(md){
-        padding: 20px 0 14px 0;
-    }
-    .footer-top{    
-        overflow: hidden;
+    background-color: #dddddd;
+    .contact-text{
+        padding: 15px 0 0 0;
         @include media-breakpoint-down(sm){
             text-align: center;
         }
-        p.cright{  
-            font-size: 13px;
-            margin: 10px 0 0 0px;
-            float: left;
-            color: $wt;
+        img{
+            width: 70px;
+            margin-bottom: 15px;
             @include media-breakpoint-down(md){
-                margin: 5px 0 0 0;
-            }
-            @include media-breakpoint-down(sm){
-                float: none;
+                width: 55px;
+                margin-bottom: 10px;
             }
         }
-        .socmed{
-            font-size: 22px;
-            color: $wt;
-            margin-right: 20px;
-            float: right;
-            transition: all 0.3s ease;
-            @include media-breakpoint-down(sm){
-                float: none;
-                display: inline-block;
-                margin: 0 5px 10px 5px;
+        .title{
+            font-family: $b;
+            font-size: 24px;
+            color: $main;
+            @include media-breakpoint-down(md){
+                font-size: 20px;
             }
-            &:hover, &:focus{
-                color: $second;
-                text-decoration: none;
+        }
+        .subtitle{
+            font-size: 16px;
+            color: $main;
+            margin-bottom: 0px;
+            @include media-breakpoint-down(md){
+                font-size: 14px;
+                margin-bottom: 10px;
             }
+        }
+        .ket{
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;;
         }
     }
 }
