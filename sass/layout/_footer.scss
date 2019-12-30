@@ -1,9 +1,11 @@
 // footer
 footer{
-    padding: 30px 0px;
+    padding: 60px 0px 50px 0;
     background-color: #dddddd;
+    @include media-breakpoint-down(md){
+        padding: 30px 0px 20px 0;
+    }
     .contact-text{
-        padding: 15px 0 0 0;
         @include media-breakpoint-down(sm){
             text-align: center;
         }
