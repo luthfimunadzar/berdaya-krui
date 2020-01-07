@@ -1,0 +1,217 @@
+.about-story{
+    padding: 60px 0 30px 0;
+    background-color: #f9f9f9;
+    @include media-breakpoint-down(sm){
+        padding: 30px 0 15px 0;
+    }
+    .title{
+        text-align: center;
+        font-family: $b;
+        font-size: 36px;
+        color: $main;
+        margin-bottom: 35px;
+        @include media-breakpoint-down(md){
+            font-size: 26px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 25px;
+        }
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.7;
+        color: $t;
+        text-align: center;
+        margin-bottom: 30px;
+        @include media-breakpoint-down(md){
+            font-size: 16px;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.about-team{
+    padding: 60px 0;
+    @include media-breakpoint-down(sm){
+        padding: 30px 0;
+    }
+    .team-item{
+        @include media-breakpoint-down(sm){
+            margin-bottom: 20px;
+        }
+        .image{
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center center;
+            margin-bottom: 20px;
+            @include media-breakpoint-down(sm){
+                height: 180px;
+                margin-bottom: 15px;
+            }
+        }
+        h5{
+            font-size: 20px;
+            font-family: $bla;
+            margin-bottom: 5px;
+            text-align: center;
+            @include media-breakpoint-down(md){
+                font-size: 18px;
+            }
+        }
+        h6{
+            font-size: 16px;
+            font-family: $m;
+            margin-bottom: 0;
+            text-align: center;
+            @include media-breakpoint-down(md){
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.about-media{
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    @include media-breakpoint-down(sm){
+        padding: 30px 0;
+    }
+    .media-link{
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+.about-contri{
+    padding: 60px 0 80px 0;
+    @include media-breakpoint-down(sm){
+        padding: 30px 0;
+    }
+    .contri-slider{
+        width: 100%;
+        .contri-item{
+            padding: 0 20px;
+            .image{
+                width: 100%;
+                height: 190px;
+                border-radius: 50%;
+                background-size: cover;
+                background-position: center center;
+                margin-bottom: 15px;
+                @include media-breakpoint-down(lg){
+                    height: 150px;
+                }
+                @include media-breakpoint-down(md){
+                    height: 140px;
+                }
+                @media screen and (max-width: 625px){
+                    height: 120px;
+                }
+                @media screen and (max-width: 425px){
+                    height: 170px;
+                }
+                @media screen and (max-width: 375px){
+                    height: 150px;
+                }
+                @media screen and (max-width: 320px){
+                    height: 120px;
+                }
+            }
+            h5{
+                font-size: 16px;
+                color: $t;
+                font-family: $b;
+                margin-bottom: 5px;
+                text-align: center;
+                @include media-breakpoint-down(sm){
+                    font-size: 14px;
+                }
+            }
+            h6{
+                font-size: 14px;
+                color: $t;
+                margin: 0;
+                text-align: center;
+                @include media-breakpoint-down(sm){
+                    font-size: 13px;
+                }
+            }
+        }
+        .slick-arrow{
+            background: none;
+            border: none;
+            font-size: 0;
+            @include media-breakpoint-down(sm){
+                display: none !important;
+            }
+            &.slick-prev{
+                position: absolute;
+                left: -30px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9;
+                @include media-breakpoint-down(lg){
+                    left: -10px;
+                }
+                @include media-breakpoint-down(md){
+                }
+                &:before{
+                    content: "\f104";
+                    font-size: 50px;
+                    opacity: 1;
+                    color: $t;
+                    font-family: 'FontAwesome';
+                    transition: all 0.3s ease;
+                    @include media-breakpoint-down(md){
+                        font-size: 50px;
+                    }
+                }
+                &:hover, &:focus{
+                    outline: none;
+                    &:before{
+                        color: $main;
+                        opacity: 1;
+                    }
+                }
+            }
+            &.slick-next{
+                position: absolute;
+                right: -30px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9;
+                @include media-breakpoint-down(lg){
+                    right: -10px;
+                }
+                @include media-breakpoint-down(md){
+                }
+                &:before{
+                    content: "\f105";
+                    font-size: 50px;
+                    opacity: 1;
+                    color: $t;
+                    font-family: 'FontAwesome';
+                    transition: all 0.3s ease;
+                    @include media-breakpoint-down(md){
+                        font-size: 50px;
+                    }
+                }
+                &:hover, &:focus{
+                    outline: none;
+                    &:before{
+                        color: $main;
+                        opacity: 1;
+                    }
+                }
+            }
+            &.slick-disabled{
+                opacity: 0;
+                display: none;
+            }
+        }
+    }
+}

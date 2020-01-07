@@ -42,7 +42,7 @@ header{
                         transition: all 0.3s ease;
                         text-transform: uppercase;
                         &:hover, &:focus{
-                            color: $second;
+                            color: $wt;
                         }
                         @include media-breakpoint-down(sm){
                             padding: 5px 10px;

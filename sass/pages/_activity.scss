@@ -1,0 +1,221 @@
+.activity-program{
+    padding: 60px 0;
+    @include media-breakpoint-down(sm){
+        padding: 30px 0;
+    }
+    .activity-title{
+        text-align: right;
+        font-size: 36px;
+        color: $t;
+        font-family: $bla;
+        margin-bottom: 15px;
+        @include media-breakpoint-down(md){
+            font-size: 30px;
+        }
+        @include media-breakpoint-down(sm){
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    }
+    .activity-subtitle{
+        text-align: right;
+        font-size: 20px;
+        line-height: 1.5;
+        color: $t;
+        margin-bottom: 0px;
+        @include media-breakpoint-down(md){
+            font-size: 16px;
+        }
+        @include media-breakpoint-down(sm){
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    }
+    .activity-slider{
+        width: 100%;
+        .act-item{
+            padding: 0 15px;
+            @include media-breakpoint-down(sm){
+                padding: 0;
+            }
+            .image{
+                width: 100%;
+                height: 250px;
+                background-size: cover;
+                background-position: center center;
+                position: relative;
+                @include media-breakpoint-down(sm){
+                    height: 170px;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba($color: #000000, $alpha: 0.1);
+                }
+            }
+        }
+        .slick-arrow{
+            background: none;
+            border: none;
+            font-size: 0;
+            @include media-breakpoint-down(sm){
+                display: none !important;
+            }
+            &.slick-prev{
+                position: absolute;
+                left: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9;
+                @include media-breakpoint-down(md){
+                    
+                }
+                &:before{
+                    content: "\f104";
+                    font-size: 40px;
+                    opacity: 1;
+                    color: $t;
+                    font-family: 'FontAwesome';
+                    transition: all 0.3s ease;
+                    @include media-breakpoint-down(md){
+                        font-size: 50px;
+                    }
+                }
+                &:hover, &:focus{
+                    outline: none;
+                    &:before{
+                        color: $main;
+                        opacity: 1;
+                    }
+                }
+            }
+            &.slick-next{
+                position: absolute;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9;
+                @include media-breakpoint-down(md){
+                }
+                &:before{
+                    content: "\f105";
+                    font-size: 40px;
+                    opacity: 1;
+                    color: $t;
+                    font-family: 'FontAwesome';
+                    transition: all 0.3s ease;
+                    @include media-breakpoint-down(md){
+                        font-size: 50px;
+                    }
+                }
+                &:hover, &:focus{
+                    outline: none;
+                    &:before{
+                        color: $main;
+                        opacity: 1;
+                    }
+                }
+            }
+            &.slick-disabled{
+                opacity: 0;
+                display: none;
+            }
+        }
+    }
+    .title-sec{
+        font-size: 26px;
+        margin: 40px 0 30px 0;
+        color: $t;
+        font-family: $b;
+        @include media-breakpoint-down(md){
+            font-size: 22px;
+            margin: 30px 0 20px 0;
+        }
+        @include media-breakpoint-down(sm){
+            margin: 20px 0 15px 0;
+        }
+    }
+    .act-do{
+        padding-left: 70px;
+        position: relative;
+        margin-bottom: 15px;
+        @include media-breakpoint-down(md){
+            padding-left: 50px;
+            margin-bottom: 10px;
+        }
+        .number{
+            font-size: 40px;
+            color: $second;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: $b;
+            display: block;
+            @include media-breakpoint-down(md){
+                font-size: 30px;
+            }
+            &.green{
+                color: $t;
+            }
+        }
+        p{
+            line-height: 1.7;
+            color: $t;
+            font-size: 18px;
+            @include media-breakpoint-down(md){
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+    }
+    .act-position{
+        background-color: $t;
+        padding: 30px;
+        border-radius: 5px;
+        @include media-breakpoint-down(md){
+            padding: 15px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 15px;
+        }
+        h5{
+            font-size: 18px;
+            font-family: $b;
+            color: $wt;
+            @include media-breakpoint-down(md){
+                font-size: 16px;
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.7;
+            color: $wt;
+        }
+        .btn-primary{
+            background-color: transparent;
+            border: 1px solid $wt;
+            color: $wt;
+            font-size: 14px;
+            padding: 7px 35px;
+            &:hover, &:focus{
+                background-color: $wt !important;
+                color: $t !important;
+            }
+        }
+        &.yellow{
+            background-color: $second;
+            .btn-primary{
+                &:hover, &:focus{
+                    color: $second !important;
+                }
+            }
+        }
+    }
+    &.gray{
+        background-color: #f5f5f5;
+    }
+}

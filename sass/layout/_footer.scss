@@ -20,16 +20,18 @@ footer{
         .title{
             font-family: $b;
             font-size: 24px;
+            text-align: left;
             color: $main;
-            @include media-breakpoint-down(md){
+            @include media-breakpoint-down(lg){
                 font-size: 20px;
             }
         }
         .subtitle{
             font-size: 16px;
             color: $main;
+            text-align: left;
             margin-bottom: 0px;
-            @include media-breakpoint-down(md){
+            @include media-breakpoint-down(lg){
                 font-size: 14px;
                 margin-bottom: 10px;
             }
