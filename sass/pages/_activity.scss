@@ -170,12 +170,17 @@
                 font-size: 16px;
                 line-height: 1.5;
             }
+            b{
+                font-family: $b;
+                font-size: 20px;
+            }
         }
     }
     .act-position{
         background-color: $t;
         padding: 30px;
         border-radius: 5px;
+        min-height: 215px;
         @include media-breakpoint-down(md){
             padding: 15px;
         }
