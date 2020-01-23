@@ -244,8 +244,8 @@
             background-size: cover;
             background-position: center center;
             height: 100vh;
-            @include media-breakpoint-down(sm){
-                height: 250px;
+            @include media-breakpoint-down(md){
+                height: 470px;
             }
         }
         .slick-arrow{
@@ -299,9 +299,11 @@
         }
     }
     .contribute-text{
+        width: 75%;
         padding: 0 35px;
         @include media-breakpoint-down(md){
             padding: 0 15px;
+            width: 100%;
         }
         @include media-breakpoint-down(sm){
             padding: 20px 0;
@@ -331,8 +333,10 @@
             font-size: 18px;
             margin-bottom: 20px;
             color: $main;
+            line-height: 1.6;
             @include media-breakpoint-down(md){
                 font-size: 16px;
+                line-height: normal;
             }
         }
     }
