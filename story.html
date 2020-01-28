@@ -22,6 +22,7 @@
     <!-- Load Scripts -->
     <script type="text/javascript" src="assets/js/main.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/spectragram.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
 
     <!--[if lt IE 9]>
@@ -123,8 +124,10 @@
             <div class="row">
                 <div class="col-lg-6 pl-lg-5">
                     <!-- LightWidget WIDGET -->
-                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                    <iframe src="http://lightwidget.com/widgets/b9a78cf2e7d953bc9394caf7cdc49ff7.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                    <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="http://lightwidget.com/widgets/b9a78cf2e7d953bc9394caf7cdc49ff7.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>-->
+                    
+                    <ul class="feed"></ul>
                 </div>
                 <div class="col-lg-6 pr-lg-5">
                     <div class="contact-text">
@@ -156,6 +159,17 @@
     </footer>
 
     <script type="text/javascript">
+
+        jQuery.fn.spectragram.accessData = {
+            accessToken: '12097971267.1677ed0.496fe0c60702491298623192b6f133c0'
+        };
+
+        $('ul.feed').spectragram('getUserFeed',{
+            max: 6,
+            size: "medium",
+            wrapEachWith: '<li></li>'
+        });
+
         // var iframe = document.getElementById("hs-form-iframe-0");
         // iframe.onload = function(){
         //     $("#hs-form-iframe-0").contents().find(".sproket").hide();
