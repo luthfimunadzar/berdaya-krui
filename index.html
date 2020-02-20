@@ -54,6 +54,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="story.html">Story</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -92,7 +95,7 @@
             </div>
         </div>
 
-        <div id="purpose" class="purpose">
+        <div id="purpose" class="purpose d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 text-md-right">
@@ -228,7 +231,7 @@
                             <h4>Berdaya Resorts ©</h4>
                             <p>A responsible resort run by Berdaya Hospitality management, opening soon in Krui end of 2020. Nature lovers and adventurer tourists are called to stay in our quiet and breathtaking spot in southern Sumatra. </p>
                             <p>Berdaya Resort © is an idyllic, bungalow setting village that is completely surrounded by Sumatra's virgin nature. Enjoy surfing, biking, hiking, visiting local communities while exploring the breathtaking, untouched beaches and Sumatran wilderness.</p>
-                            <a href="#" class="btn btn-primary small mt-lg-3">Contribute Now</a>
+                            <a href="activity.html" class="btn btn-primary small mt-lg-3">Contribute Now</a>
                         </div>
                     </div>
                 </div>
@@ -253,7 +256,7 @@
                             <h4>Berdaya Surf Academy</h4>
                             <p>Developing local surfing talent in Krui of South Sumatra is one of our earliest movement. Through Berdaya Surf Academy, visitors and surfers from around the world can share their knowledge on basic surfing skills to children and local communities in Krui, contributing directly to Krui Local youth empowerment. </p>
                             <p>Opening soon in other area.</p>
-                            <a href="#" class="btn btn-primary small mt-lg-3">Contribute Now</a>
+                            <a href="activity.html" class="btn btn-primary small mt-lg-3">Contribute Now</a>
                         </div>
                     </div>
                 </div>
@@ -278,7 +281,7 @@
                             <h4>Berdaya Purposeful<br/>Programs ©</h4>
                             <p>More than just a tour, it is a journey-enriching activities curated specially for responsible visitors, like you. We conduct activities focusing on education, local business, and environment while connecting local communities and visitors. </p>
                             <p>Make a difference in how you travel. Share your knowledge to communities in-need.</p>
-                            <a href="#" class="btn btn-primary small mt-lg-3">Contribute Now</a>
+                            <a href="activity.html" class="btn btn-primary small mt-lg-3">Contribute Now</a>
                         </div>
                     </div>
                 </div>
@@ -425,16 +428,9 @@
     </main>
 
     <footer>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 pl-lg-5">
-                    <!-- LightWidget WIDGET -->
-                    <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                    <iframe src="http://lightwidget.com/widgets/b9a78cf2e7d953bc9394caf7cdc49ff7.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>-->
-                    
-                    <ul class="feed"></ul>
-                </div>
-                <div class="col-lg-6 pr-lg-5 mt-lg-0 mt-3">
+                <div class="col-lg-8 col-lg-10 offset-lg-2 offset-md-1">
                     <div class="contact-text">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-2">
@@ -449,14 +445,26 @@
                                 <span class="ket"><i class="fa fa-phone" aria-hidden="true"></i> : 081189998886</span>
                             </div>
                         </div>
-                        <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js"></script>
-                        <script>
-                        hbspt.forms.create({
-                            portalId: "7030643",
-                            formId: "b1f96196-9488-4301-8571-a5ab34c46401"
-                        });
-                        </script>
-                        <span class="ket">© Copyright 2020 - Berdaya Krui Alright Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- LightWidget WIDGET -->
+                    <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="http://lightwidget.com/widgets/b9a78cf2e7d953bc9394caf7cdc49ff7.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>-->
+                    
+                    <ul class="feed"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-text text-center">
+                        <span class="ket mb-0">© Copyright 2020 - Berdaya Krui Alright Reserved</span>
                     </div>
                 </div>
             </div>
@@ -553,7 +561,7 @@
             e.preventDefault();
             var target = $(this).attr('href');
             $('html, body').animate({
-                scrollTop: $(target).offset().top - 82
+                scrollTop: $(target).offset().top
             }, 'slow', 'swing', function() {});
         })
         
